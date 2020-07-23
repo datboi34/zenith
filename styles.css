@@ -1,0 +1,245 @@
+/* mobile first */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Futura";
+  src: url(./zenith-assets/fonts/futura-book.ttf);
+}
+:root {
+  --primary-color: rgb(173, 48, 173);
+  --primary-color-2: rgb(60, 14, 167);
+  --font--style: "futura";
+}
+/* base */
+body {
+  font-family: var(--font--style);
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+footer {
+  margin-top: 50px;
+}
+
+/* layout */
+/*header section*/
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.feature-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.services-section {
+}
+
+/* blocks */
+/*background image-texture section*/
+.background-image_wrapper {
+  width: 40%;
+}
+.background-image {
+  position: absolute;
+  width: 609px;
+  height: 430px;
+  left: -200px;
+  top: 80px;
+}
+/*header section*/
+.header-logo_wrapper {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+  margin-left: 6px;
+  display: none;
+}
+.header-nav_ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-hamburger_menu {
+  width: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.bars-1 {
+  display: inline-block;
+  height: 2px;
+  width: 50%;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+.bars-2 {
+  display: inline-block;
+  height: 2px;
+  width: 40%;
+  margin-left: 5px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+/*hero section*/
+.hero-section_card__wrapper {
+  width: 70%;
+}
+.hero-section_title {
+  position: relative;
+  right: 50px;
+  margin-bottom: 80px;
+}
+
+.hero-section_card__image {
+  position: relative;
+  right: 15px;
+}
+/*feauture section*/
+
+.feature-section_title {
+  color: var(--primary-color-2);
+  margin-bottom: 30px;
+}
+.feature-section_cards__wrapper {
+  width: 85%;
+}
+
+.feature-section_card {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.feature-section_card p {
+  position: relative;
+  top: 20px;
+  left: 15px;
+}
+
+.feature-section_card__image {
+  position: relative;
+  left: 240px;
+  bottom: 10px;
+  width: 16px;
+  height: 50px;
+}
+.feature-section_card__big {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/*services section*/
+
+.service-section_title {
+  text-align: center;
+  color: var(--primary-color-2);
+  margin-bottom: 50px;
+}
+
+.service-section_images__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.services-section_image {
+  display: grid;
+  width: 50%;
+  margin-left: 40px;
+}
+.services-section_image__asana {
+  margin-left: 80px;
+}
+/*footer section*/
+.footer {
+  background-color: #4f09f3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-content_wrapper {
+  width: 100%;
+  display: grid;
+}
+
+.footer-title {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 110px;
+  color: white;
+}
+
+.footer-email {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  border: 0px;
+  border-radius: 3px;
+  padding: 2px;
+  width: 130px;
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.footer-btn_download {
+  display: grid;
+  grid-row: 2;
+  grid-column: 3;
+  height: 20px;
+  width: 80px;
+  padding: 1px;
+  border: 0 solid;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.footer-nav {
+  display: grid;
+  grid-row: 3;
+  grid-column: 1;
+  margin-left: 110px;
+
+  width: 100%;
+}
+
+.footer-nav_ul {
+  display: grid;
+  font-family: var(--font--style);
+  font-size: small;
+  color: white;
+  justify-content: space-evenly;
+}
+/* tablet styles */
+@media (min-width: 550px) {
+  /* desktop styles */
+}
